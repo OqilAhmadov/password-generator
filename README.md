@@ -9,7 +9,7 @@ Password Generator is a lightweight JavaScript library that allows you to genera
 ## Installation
 To install Password Generator, simply run the following command in your terminal:
 ```bash
-npm i psg-js
+npm i password-generate-js
 ```
 
 ## Usage
@@ -20,8 +20,9 @@ Using Password Generator is incredibly easy. Once you've installed the library, 
 import PasswordGenerator from "psg-js";
 
 const passwordGenerator = new PasswordGenerator();
-  const password = passwordGenerator.generate({length: 12});
-  console.log("password", password);
+
+const password = passwordGenerator.generate({length: 12});
+console.log("password", password);
 
 ```
 In the example above, we're generating a password that's 12 characters long. You can customize the length of the password by passing a different number as the first argument to the generate method.
