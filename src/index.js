@@ -9,7 +9,6 @@ class PasswordGenerator {
    * @param {Boolean} options.includeUppercase - Whether to include uppercase letters in the generated password.
    * @param {Boolean} options.includeLowercase - Whether to include lowercase letters in the generated password.
    * @param {Boolean} options.includeNumbers - Whether to include numbers in the generated password.
-   * @param {Boolean} options.includeSymbols - Whether to include symbols in the generated password.
    */
   constructor(options) {
     const defaultOptions = {
@@ -17,7 +16,6 @@ class PasswordGenerator {
       includeUppercase: true,
       includeLowercase: true,
       includeNumbers: true,
-      includeSymbols: true,
     };
     this.options = Object.assign({}, defaultOptions, options);
   }
@@ -52,11 +50,9 @@ class PasswordGenerator {
     if (this.options.includeNumbers) {
       charset += "0123456789";
     }
-    if (this.options.includeSymbols) {
-      charset += "!@#$%^&*()_+-=[]{}|;:,.<>?";
-    }
+
     return charset;
   }
 }
 
-module.exports = PasswordGenerator;
+export default PasswordGenerator;
