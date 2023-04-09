@@ -27,6 +27,15 @@ console.log("password", password);
 ```
 In the example above, we're generating a password that's 12 characters long. You can customize the length of the password by passing a different number as the first argument to the generate method.
 
+## Available options
+Any of these can be passed into the options object for each function.
+| Name  | Description  | Default Value |
+| :------------ |:---------------:| -----:|
+| length      | Integer, length of password. | 10 |
+| numbers*	      | Boolean, put numbers in password. |   true |
+| lowercase*	 | Boolean, put lowercase in password. |   true |
+| uppercase* | Boolean, use uppercase letters in password. | true |
+
 ## API
 Password Generator has a simple API that consists of a single method:
 
