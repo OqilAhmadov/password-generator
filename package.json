@@ -1,6 +1,6 @@
 {
   "name": "psg-js",
-  "version": "1.0.20",
+  "version": "1.0.22",
   "description": "Password Generator is a powerful and customizable JavaScript library that allows you to generate secure, random passwords for your users. With features like configurable length, character sets, and complexity options, Password Generator makes it easy to create passwords that meet the specific needs of your application. Whether you need to generate passwords for user accounts, reset passwords, or any other use case, Password Generator has you covered. Plus, its simple and intuitive API makes it easy to integrate into any web application. Try Password Generator today and see the difference it can make for your security needs!",
   "main": "dist/password-generator.js",
   "scripts": {
