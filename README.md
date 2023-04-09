@@ -17,11 +17,12 @@ Using Password Generator is incredibly easy. Once you've installed the library, 
 ####Javascript　
 
 ```javascript
-import PasswordGenerator from "psg-js";
+import PasswordGenerator from "password-generate-js";
 
-const passwordGenerator = new PasswordGenerator();
+const passwordGenerator = new PasswordGenerator({length: 12});
 
-const password = passwordGenerator.generate({length: 12});
+const password = passwordGenerator.generate();
+
 console.log("password", password);
 
 ```
