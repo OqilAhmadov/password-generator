@@ -2,6 +2,10 @@
 
 Password Generator is a lightweight JavaScript library that allows you to generate strong and secure passwords with ease. With a simple and intuitive API, Password Generator is perfect for any project that requires password generation functionality.
 
+## Authors
+
+- [@oqil_ahmad](https://github.com/OqilAhmadov)
+
 ## Installation
 To install Password Generator, simply run the following command in your terminal:
 ```bash
@@ -38,3 +42,7 @@ Contributions to Password Generator are always welcome! If you have an idea for 
 
 ## License
 Password Generator is released under the MIT license. See LICENSE.md for more information.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
