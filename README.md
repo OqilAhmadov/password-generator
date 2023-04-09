@@ -31,7 +31,7 @@ In the example above, we're generating a password that's 12 characters long. You
 Password Generator has a simple API that consists of a single method:
 
 generate(length: number): string
-Generates a random password with the specified length. The password will include a mix of uppercase and lowercase letters, numbers, and symbols.
+Generates a random password with the specified length. The password will include a mix of uppercase and lowercase letters and numbers.
 
 ## Arguments
 length (required): The length of the password to generate. Must be a positive integer.
