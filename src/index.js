@@ -6,16 +6,16 @@ class PasswordGenerator {
    * Creates a new PasswordGenerator instance.
    * @param {Object} options - The options to configure the password generator.
    * @param {Number} options.length - The length of the generated password.
-   * @param {Boolean} options.includeUppercase - Whether to include uppercase letters in the generated password.
-   * @param {Boolean} options.includeLowercase - Whether to include lowercase letters in the generated password.
-   * @param {Boolean} options.includeNumbers - Whether to include numbers in the generated password.
+   * @param {Boolean} options.uppercase - Whether to include uppercase letters in the generated password.
+   * @param {Boolean} options.lowercase - Whether to include lowercase letters in the generated password.
+   * @param {Boolean} options.numbers - Whether to include numbers in the generated password.
    */
   constructor(options) {
     const defaultOptions = {
-      length: 12,
-      includeUppercase: true,
-      includeLowercase: true,
-      includeNumbers: true,
+      length: 10,
+      uppercase: true,
+      lowercase: true,
+      numbers: true,
     };
     this.options = Object.assign({}, defaultOptions, options);
   }
@@ -41,13 +41,13 @@ class PasswordGenerator {
    */
   _getCharset() {
     let charset = "";
-    if (this.options.includeUppercase) {
+    if (this.options.uppercase) {
       charset += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     }
-    if (this.options.includeLowercase) {
+    if (this.options.lowercase) {
       charset += "abcdefghijklmnopqrstuvwxyz";
     }
-    if (this.options.includeNumbers) {
+    if (this.options.numbers) {
       charset += "0123456789";
     }
 
